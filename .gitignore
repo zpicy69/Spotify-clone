@@ -1,5 +1,10 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+
+password.txt
+.env.local
+1.8.1
+
 # dependencies
 /node_modules
 /.pnp
