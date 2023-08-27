@@ -4,6 +4,7 @@
 password.txt
 .env.local
 1.8.1
+stripe.exe
 
 # dependencies
 /node_modules
