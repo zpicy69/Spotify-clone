@@ -1,34 +1,54 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+A Spotify clone project built using TypeScript and React. The project is structured around the Next.js framework.
 
-## Getting Started
+Here's a high-level overview of the project structure:
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Actions:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+getActiveProductsWithPrices.ts: Retrieves active products along with their prices.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+getLikedSongs.ts: Fetches songs that a user has liked.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+getSongs.ts: Fetches a list of songs.
 
-## Learn More
+getSongsByTitle.ts: Retrieves songs based on their title.
 
-To learn more about Next.js, take a look at the following resources:
+getSongsByUserId.ts: Fetches songs associated with a specific user ID.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Components:
+PageContent.tsx: A component that likely represents the main content of a page.
+AccountContent.tsx: A component dedicated to displaying account-related content.
+AuthModal.tsx: A modal component for authentication purposes.
+Header.tsx: Represents the header of the application.
+Player.tsx: A component that functions as a music player.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+API Routes:
 
-## Deploy on Vercel
+create-checkout-session/route.ts: Handles the creation of a checkout session, possibly for payment processing.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+create-portal-link/route.ts: Manages the creation of a portal link.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+webhooks/route.ts: Handles webhooks, which are typically used for real-time notifications from third-party services.
+
+App Layout and Pages:
+layout.tsx: Defines the overall layout of the application.
+
+LikedContent.tsx: Displays content related to songs that a user has liked.
+
+SearchContent.tsx: Represents the content of the search page or functionality.
+
+Hooks:
+useAuthModal.ts: A custom hook for managing the authentication modal's state and behavior.
+
+usePlayer.ts: A hook dedicated to the functionality of the music player.
+
+useUser.tsx: A hook that manages user-related data and operations.
+
+Libraries:
+
+helpers.ts: Contains utility functions or helpers that assist in various tasks throughout the application.
+
+
+
+
+![Alt text](image.png)
